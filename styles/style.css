@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background-color: #eaeded;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+/*<<<<<<<<<<<<<<<<<'HEADER'>>>>>>>>>>>>>>>>>*/
+
+
+/*<<<<<<<<<<<<<<<<<'NAV'>>>>>>>>>>>>>>>>>*/
+
+        /*<<<<<<<<<<<<<<<<<'MENU DESPLEGABLE'>>>>>>>>>>>>>>>>>*/
+nav div.container-button-menu{
+    display: none;
+    justify-content: space-between;
+}
+nav div.container-button-menu button{
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    background: none;
+}
+nav div.container-button-menu button:hover{
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+nav div.container-button-menu button.btn-menu-exit{
+    display: none;
+}
+nav div.container-button-menu button.btn-menu-exit.activ{
+    display: inline-block;
+}
+nav.menu{
+    background: #232f3e;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+
+nav.menu div.container-links-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav.menu div.btn-categorias{
+    color: #fff;
+    padding: 7px;
+    border-radius: 3px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid transparent;
+    font-size: 12px;
+    cursor: default;
+    
+}
+
+nav.menu div.btn-categorias #arrow-botton{
+    margin-left: 20px;
+    position: relative;
+    bottom: 3px;
+}
+nav.menu div.btn-categorias span{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav.menu div.btn-categorias:hover{
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+        /*<<<<<<<<<<<<<<<<<'ENLASES'>>>>>>>>>>>>>>>>>*/
+
+nav.menu div.links a{
+    color: #ccc;
+    border: 1px solid transparent;
+    padding: 7px;
+    border-radius: 3px;
+    font-size: 14px;
+
+}
+nav.menu div.links a:hover{
+    border: 1px solid rgba(255, 255, 255, 0.4)
+}
+
+
+
+/*<<<<<<<<<<<<<<<<<' MAIN '>>>>>>>>>>>>>>>>>*/
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+section#slider{
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    height: 100vh;
+
+}
