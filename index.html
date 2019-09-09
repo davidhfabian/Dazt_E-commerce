@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+
         <nav class="menu" id="menu">
 
             <div class="container container-button-menu">
@@ -19,7 +20,7 @@
             <div class="container container-links-nav">
                 <div class="btn-categorias" id="btn-categorias">
                     <p>Todas las <span>Categorias</span></p>
-                    <i id="arrow-botton" class="fas fa-caret-down"></i>
+                    <i id="btn-arrow" class="fas fa-caret-down"></i>
                 </div>
 
                 <div class="links">
@@ -30,7 +31,28 @@
                 </div>
             </div>
 
+            <div class="container container-grid">
+                <div class="grid activ" id="grid">
+                    <div class="container-categorias">
+
+                        <button><i id="btn-back" class="fas fa-arrow-left"></i> Atras</button>
+                        <h3 class="subtitulo">Categorias</h3>
+                        <a href="#" data-categoria="tecnologia">Tecnologia <i class="fas fa-angle-right btn-arrow-left"></i></a>
+                        <a href="#" data-categoria="libros">Libros <i class="fas fa-angle-right btn-arrow-left"></i></a>
+                        <a href="#" data-categoria="ropa">Ropa <i class="fas fa-angle-right btn-arrow-left"></i></a>
+                        <a href="#" data-categoria="hogar">Hogar <i class="fas fa-angle-right btn-arrow-left"></i></a>
+                        <a href="#" data-categoria="juegos">Juegos <i class="fas fa-angle-right btn-arrow-left"></i></a>
+                        <a href="#" data-categoria="salud">Salud <i class="fas fa-angle-right btn-arrow-left"></i></a>
+                        <a href="#" data-categoria="alimentos">Alimentos <i class="fas fa-angle-right btn-arrow-left"></i></a>
+                    </div>
+                    <div class="container-subcategorias">
+
+                    </div>
+                </div>
+                </div>
+
         </nav>
+        
     </header>
     <main class="container">
         <section id="slider"></section>

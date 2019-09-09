@@ -64,7 +64,7 @@ nav.menu div.btn-categorias{
     
 }
 
-nav.menu div.btn-categorias #arrow-botton{
+nav.menu div.btn-categorias #btn-arrow{
     margin-left: 20px;
     position: relative;
     bottom: 3px;
@@ -93,7 +93,92 @@ nav.menu div.links a:hover{
     border: 1px solid rgba(255, 255, 255, 0.4)
 }
 
+    /*<<<<<<<<<<<<<<<<<'GRID CATEGORIAS Y SUBCATEGORIAS'>>>>>>>>>>>>>>>>>*/
 
+nav.menu  div.container-grid{
+    position: relative;
+
+}
+nav.menu  div.container-grid div.grid{
+    width: 100%;
+    display: none;
+    /* background-color: #ccc; */
+    position: absolute;
+    top: 5px;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "categorias subcategorias subcategorias subcategorias"
+
+}
+nav.menu  div.container-grid div.grid.activ {
+    display: grid;
+}
+nav.menu  div.container-grid div.grid::before {
+    content: "";
+    display: block;
+    background-color: transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+    position: absolute;
+    top: -5px;
+    left: 65px;
+}
+nav.menu  div.container-grid div.grid > div {
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .10);
+}
+
+        /*<<<<<<<<<<<<<<<<<'CATEGORIAS'>>>>>>>>>>>>>>>>>*/
+
+nav.menu  div.grid button {
+    background: #232f3e;
+    color: #fff;
+    border: none;
+    padding: 10px ;
+    border-radius: 3px;
+    margin: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+} 
+
+nav.menu  div.grid  #btn-back {
+    margin-right: 10px;
+}
+
+nav.menu  div.grid div.container-categorias {
+    grid-area: categorias;
+    padding-top: 10px;
+    min-height: 300px;
+}
+
+nav.menu  div.grid div.container-categorias h3.subtitulo{
+    display: none;
+}
+
+nav.menu  div.grid div.container-categorias a{
+    color: #000;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+nav.menu  div.grid div.container-categorias a:hover{
+    color: #e47911;
+    font-weight: bold;
+}
+
+nav.menu  div.grid div.container-categorias a .btn-arrow-left{
+    display: none;
+    
+}
+
+nav.menu  div.grid div.container-categorias a:hover .btn-arrow-left{
+    display: inline-block;
+}
 
 /*<<<<<<<<<<<<<<<<<' MAIN '>>>>>>>>>>>>>>>>>*/
 
