@@ -29,7 +29,7 @@ nav.menu-sup div.container {
 
 /*<<<<<<<<<<<<<<<<<'SEARCH'>>>>>>>>>>>>>>>>>*/
 nav.menu-sup div.container div.container-search{
-    width: 316px;
+    width: 295px;
     padding: 5px 0px;
 }
 nav.menu-sup div.container div.container-search button{
@@ -66,7 +66,7 @@ nav.menu-sup div.container div.container-search input::placeholder{
 /*<<<<<<<<<<<<<<<<<'LOGIN - CART'>>>>>>>>>>>>>>>>>*/
 nav.menu-sup div.container div.container-singin-cart{
     
-    width: 316px;
+    width: 295px;
     padding: 5px 0px;
     display: flex;
     justify-content: space-between;   
@@ -89,19 +89,19 @@ nav.menu-sup div.container div.container-singin-cart  #cart-icon{
     margin-right: 5px;
 }
 nav.menu-sup div.container div.container-singin-cart  div.singin{
-    padding: 5px 10px;
+    padding: 7px;
     border-radius: 3px;
     border: 1px solid transparent;
     cursor: pointer;
 }
 nav.menu-sup div.container div.container-singin-cart  div.favorite{
-    padding: 5px 10px;
+    padding: 7px;
     border-radius: 3px;
     border: 1px solid transparent;
     cursor: pointer;
 }
 nav.menu-sup div.container div.container-singin-cart  div.cart{
-    padding: 5px 10px;
+    padding: 7px;
     border-radius: 3px;
     border: 1px solid transparent;
     position: relative;
@@ -372,5 +372,21 @@ section#slider{
     margin: 20px 0;
     padding: 20px;
     height: 100vh;
+
+}
+
+
+
+
+/*<<<<<<<<<<<<<<<<<'MEDIAQUERYS'>>>>>>>>>>>>>>>>>*/
+@media screen and (max-width: 1150px){
+
+    .container{
+    margin: 0 auto;
+    width: 100%;
+    
+    }
+}
+@media screen and (max-width: 800px){
 
 }
