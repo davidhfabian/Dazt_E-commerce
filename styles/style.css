@@ -11,11 +11,127 @@ body{
 a{
     text-decoration: none;
 }
+input:focus{
+	outline:0px;
+}
 
 /*<<<<<<<<<<<<<<<<<'HEADER'>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<<<'NAV LOGO, SEARCH, LOGIN'>>>>>>>>>>>>>>>>>*/
+nav.menu-sup{
+    height: 40px;
+    background: #232f3e;
+}
+nav.menu-sup div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*<<<<<<<<<<<<<<<<<'SEARCH'>>>>>>>>>>>>>>>>>*/
+nav.menu-sup div.container div.container-search{
+    width: 316px;
+    padding: 5px 0px;
+}
+nav.menu-sup div.container div.container-search button{
+    color: white;
+    background: none;
+    border: none;
+}
+nav.menu-sup div.container div.container-search #search-icon{
+    font-size: 16px;
+}
+nav.menu-sup div.container div.container-search input{
+    color: white;
+    background: transparent;
+    border: none;
+    padding: 10px 20px 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav.menu-sup div.container div.container-search input:focus{
+    border-bottom: 1px solid #fff;
+    padding: 10px 20px 3px 10px;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+nav.menu-sup div.container div.container-search input::placeholder{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+/*<<<<<<<<<<<<<<<<<'LOGO'>>>>>>>>>>>>>>>>>*/
 
 
-/*<<<<<<<<<<<<<<<<<'NAV'>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<<<'LOGIN - CART'>>>>>>>>>>>>>>>>>*/
+nav.menu-sup div.container div.container-singin-cart{
+    
+    width: 316px;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-between;   
+}
+nav.menu-sup div.container div.container-singin-cart {
+    font-size: 14px;
+    font-weight: bold;
+    color: #eaeded;
+}
+nav.menu-sup div.container div.container-singin-cart  #singin-icon{
+    font-size: 16px;
+    margin-right: 5px;
+}
+nav.menu-sup div.container div.container-singin-cart  #favorite-icon{
+    font-size: 16px;
+    margin-right: 5px;
+}
+nav.menu-sup div.container div.container-singin-cart  #cart-icon{
+    font-size: 16px;
+    margin-right: 5px;
+}
+nav.menu-sup div.container div.container-singin-cart  div.singin{
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+nav.menu-sup div.container div.container-singin-cart  div.favorite{
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+nav.menu-sup div.container div.container-singin-cart  div.cart{
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    position: relative;
+    cursor: pointer;
+}
+nav.menu-sup div.container div.container-singin-cart  div.singin:hover{
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+nav.menu-sup div.container div.container-singin-cart  div.favorite:hover{
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+nav.menu-sup div.container div.container-singin-cart  div.cart:hover{
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+nav.menu-sup div.container div.container-singin-cart  div.cart div.cont-cart{
+    background: #fff;
+    color: #000;
+    padding: 0px 3px;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 50%;
+    /* display: inline-block; */
+    display: none;
+    vertical-align: text-top;
+}
+
+
+
+
+/*<<<<<<<<<<<<<<<<<'NAV MENU'>>>>>>>>>>>>>>>>>*/
 
         /*<<<<<<<<<<<<<<<<<'MENU DESPLEGABLE'>>>>>>>>>>>>>>>>>*/
 
@@ -249,7 +365,7 @@ nav.menu  div.grid  div.subcategorias div.galeria-subcategoria a{
 .container{
     margin: 0 auto;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1150px;
 }
 section#slider{
     background-color: #fff;
