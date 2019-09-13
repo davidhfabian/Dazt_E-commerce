@@ -142,12 +142,14 @@ nav div.container-button-menu{
 nav div.container-button-menu button{
     font-size: 20px;
     color: #fff;
+    background: #232f3e;
     padding: 10px 20px;
     border: 1px solid transparent;
     border-radius: 5px;
     display: inline-block;
     cursor: pointer;
-    background: none;
+    /* background: none; */
+    z-index: 1000;
 }
 nav div.container-button-menu button:hover{
     border: 1px solid rgba(255, 255, 255, 0.4);
@@ -264,6 +266,7 @@ nav.menu  div.grid button.btn-back{
     font-size: 16px;
     cursor: pointer;
     display: none;
+    z-index: 4000;
 } 
 
 nav.menu  div.grid  #btn-back {
@@ -409,12 +412,14 @@ div.oferta-title{
 }
 section.oferta{
     grid-area: oferta;
-    height: 310px;
+    height: 100%;
+    min-height: 310px;
     background: transparent;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 40px;
+    flex-flow: wrap;
 }
 div.masvendido-title{
     grid-area: masvendido-title;
@@ -425,12 +430,14 @@ div.masvendido-title{
 }
 section.masvendido{
     grid-area: masvendido;
-    height: 310px;
+    height: 100%;
+    min-height: 320px;
     background: transparent;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 40px;
+    flex-flow: wrap;
     
 }
 div.smartphone-title{
@@ -442,12 +449,14 @@ div.smartphone-title{
 }
 section.smartphone{
     grid-area: smartphone;
-    height: 310px;
+    height: 100%;
+    min-height: 320px;
     background: transparent;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 40px;
+    flex-flow: wrap;
 
 }
 div.reloj-title{
@@ -459,20 +468,24 @@ div.reloj-title{
 }
 section.reloj{
     grid-area: reloj;
-    height: 310px;
+    height: 100%;
+    min-height: 320px;
     background: transparent;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 40px;
+    flex-flow: wrap;
 
 }
 section.box-1{
     grid-area: box-1;
     display: flex;
-    height: 250px;
+    height: 100%;
+    min-height: 250px;
     background-color: #fff;
     margin-bottom: 40px;
+    flex-flow: wrap;
     
 }
 section.box-1:hover{
@@ -482,9 +495,11 @@ section.box-1:hover{
 section.box-2{
     grid-area: box-2;
     display: flex;
-    height: 250px;
+    height: 100%;
+    min-height: 250px;
     background-color: #fff;
     margin-bottom: 40px;
+    flex-flow: wrap;
     
 }
 section.box-2:hover{
@@ -536,6 +551,7 @@ section.img-fix{
     width: 100%;
     height: 250px;
     max-height: 300px;
+    margin-top: 40px;
     background-image: url('../recursos/img-fixed.jpeg');
     background-size: cover;
     background-attachment: fixed;
@@ -567,9 +583,91 @@ div.fix-text h3{
 
 /*<<<<<<<<<<<<<<<<<' FOOTER'>>>>>>>>>>>>>>>>>*/
 
-footer.footer-container{
+footer{
     
     background-color: #232f3e;
+}
+div.footer-container{
+    display: grid;
+    grid-template-columns: (3,1fr);
+    grid-template-rows: 1fr;
+
+    grid-gap: 20%;
+    grid-template-areas: "footer-menu footer-newleter footer-social";
+    text-align: center;
+    padding: 30px 0;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.4);
+}
+.footer-menu{
+    
+    width: 100%;
+    grid-area: footer-menu;
+}
+.footer-menu h4,.footer-menu a{
+    padding: 10px 10px;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.4);
+}
+.footer-newleter{
+    
+    width: 100%;
+    grid-area: footer-newleter;
+}
+.footer-newleter input{
+    color: white;
+    background: transparent;
+    border: none;
+    padding: 10px 20px 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid rgba(0,0,0,.4);
+}
+.footer-newleter input:focus{
+    border-bottom: 1px solid #fff;
+    padding: 10px 20px 3px 10px;
+    transition: 1s ease all;
+}
+.footer-newleter input::placeholder{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+.footer-newleter label{
+    width: 100%;
+    padding: 10px 10px;
+}
+.footer-social{
+    
+    width: 100%;
+    grid-area: footer-social;
+}
+.footer-social h4{
+    width: 100%;
+    padding: 10px 10px;
+    color: rgba(255, 255, 255, 0.4);
+}
+.footer-social li a{
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.4);
+}
+h4.footer-title{
+    color: rgba(0,0,0,.4);
+    padding-bottom: 10px;
+}
+div.copy{
+    width: 100%;
+    background-color: #000;
+    color: #666;
+    padding: 5px;
+    text-align: center; 
+}
+div.copy a{
+    color: #e47b11;
+     
 }
 
 
@@ -637,7 +735,7 @@ footer.footer-container{
     position: absolute;
     top: 15PX;
     left: 15px;
-    z-index: 5000;
+    z-index: 1000;
     color: #000;
     font-size: 28px;
     cursor: pointer;
@@ -654,7 +752,7 @@ footer.footer-container{
     top: 15px;
     left: 156px;
     font-size: 26px;
-    z-index: 5000;
+    z-index: 1000;
 }
 .item-cart:hover{
     font-size: 34px;
@@ -712,6 +810,28 @@ footer.footer-container{
     div.container{
         width: 90%;
         }
+    .oculta{
+        display: none;
+    }
+    nav.menu-sup{
+        height: 0px;
+    }
+    .container-sections{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas: "oferta-title  masvendido-title"
+        "oferta          masvendido"
+        "smartphone-title       smartphone-title"
+        "smartphone        smartphone"
+        "reloj-title       reloj-title"
+        "reloj                 reloj"
+        "box-1          box-1      "
+        " box-2          box-2 ";
+
+    }
+    div.container-search button{
+        margin-left: 70px;
+    }
     /*<<<<<<<<<<<<<<<<<'NAV'>>>>>>>>>>>>>>>>>*/
     nav.menu div.container-button-menu{
         display: flex;
