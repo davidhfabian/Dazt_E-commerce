@@ -161,7 +161,7 @@ nav div.container-button-menu button.btn-menu-exit.activ{
 nav.menu{
     background: #232f3e;
     padding: 5px 0;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 nav.menu div.container-links-nav{
@@ -366,12 +366,22 @@ nav.menu  div.grid  div.subcategorias div.galeria-subcategoria a{
     width: 90%;
     max-width: 1150px;
 }
-section#slider{
+/* section .slider{
     background-color: #fff;
     margin: 20px 0;
     padding: 20px;
     height: 100vh;
 
+} */
+section#slider{
+    height: 300px;
+    max-height: 300px;
+}
+section#slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
 
@@ -516,3 +526,4 @@ section#slider{
         font-size: 20px;
     }
 }
+
