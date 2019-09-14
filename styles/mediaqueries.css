@@ -1,0 +1,139 @@
+/*<<<<<<<<<<<<<<<<<'MEDIAQUERYS'>>>>>>>>>>>>>>>>>*/
+
+@media screen and (max-width: 1150px) {
+    div.container {
+        width: 100%;
+    }
+    nav.menu-sup {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    div.container {
+        width: 90%;
+    }
+    .oculta {
+        display: none;
+    }
+    nav.menu-sup {
+        height: 0px;
+    }
+    .container-sections {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas: "oferta-title  masvendido-title" "oferta          masvendido" "smartphone-title       smartphone-title" "smartphone        smartphone" "reloj-title       reloj-title" "reloj                 reloj" "box-1          box-1      " " box-2          box-2 ";
+    }
+    div.container-search button {
+        margin-left: 70px;
+    }
+    /*<<<<<<<<<<<<<<<<<'NAV'>>>>>>>>>>>>>>>>>*/
+    nav.menu div.container-button-menu {
+        display: flex;
+    }
+    nav.menu div.container-links-nav {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        left: 0;
+        background: #232f3e;
+        height: 100vh;
+        width: 80%;
+        z-index: 2000;
+        transition: .3s ease all;
+        transform: translate(-100%)
+    }
+    nav.menu div.container-links-nav.active {
+        transform: translate(0%)
+    }
+    nav.menu div.container-links-nav div.btn-categorias {
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    nav.menu div.container-links-nav div.btn-categorias #btn-arrow {
+        position: static;
+        margin-left: 20px;
+        transform: rotate(-90deg);
+    }
+    nav.menu div.container-links-nav div.links {
+        width: 100%;
+    }
+    nav.menu div.container-links-nav div.links a {
+        display: block;
+        margin: 10px 0;
+        padding: 10px;
+    }
+    /*<<<<<<<<<<<<<<<<<'NAV GRIID'>>>>>>>>>>>>>>>>>*/
+    nav.menu div.container-grid div.grid {
+        display: grid;
+        transition: .3s ease all;
+        transform: translateX(-110%);
+        z-index: 3000;
+        width: 80%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        grid-template-areas: "categorias categorias categorias categorias";
+    }
+    nav.menu div.container-grid div.grid.active {
+        transform: translateX(0%);
+    }
+    nav.menu div.container-grid div.grid::before {
+        display: none;
+    }
+    nav.menu div.container-grid div.grid .btn-back {
+        display: inline-block;
+    }
+    nav.menu div.container-grid div.grid h3.subtitulo {
+        display: block;
+    }
+    /*<<<<<<<<<<<<<<<<<'NAV SUBCATEGORIAS'>>>>>>>>>>>>>>>>>*/
+    nav.menu div.grid div.container-subcategorias {
+        /* display: none; */
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transform: translate(-100%);
+        transition: .3s ease all;
+        overflow: auto;
+    }
+    nav.menu div.grid div.container-subcategorias.active {
+        transform: translate(0%);
+    }
+    nav.menu div.grid div.container-subcategorias div.subcategorias {
+        grid-template-columns: 1fr;
+    }
+    /*<<<<<<<<<<<<<<<<<'retocar en windows para el celu'>>>>>>>>>>>>>>>>>*/
+    nav.menu div.grid div.container-subcategorias div.subcategorias div.banner-subcategoria a {
+        width: 100%;
+        min-height: 250px;
+        max-height: 250px;
+    }
+    nav.menu div.grid div.container-subcategorias div.subcategorias div.link-subcategoria {
+        min-height: 50vh;
+        overflow: auto;
+    }
+    nav.menu div.grid div.container-subcategorias div.subcategorias div.galeria-subcategoria a {
+        width: 25%;
+        height: 100%;
+    }
+    /*<<<<<<<<<<<<<<<<<'NAV SUPERIOR'>>>>>>>>>>>>>>>>>*/
+    .title-icon, #search {
+        display: none;
+    }
+    nav.menu-sup div.container div.container-singin-cart {
+        width: 150px;
+    }
+    nav.menu-sup div.container div.container-search {
+        width: 150px;
+    }
+    nav.menu-sup div.container div.container-singin-cart #singin-icon, #favorite-icon, #cart-icon {
+        font-size: 20px;
+    }
+}

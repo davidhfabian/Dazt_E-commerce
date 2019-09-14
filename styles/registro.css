@@ -1,0 +1,12 @@
+section.container-form {
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+section #form-login{
+    background: #fff;
+    margin-top: 40px;
+    text-align: center;
+
+}
