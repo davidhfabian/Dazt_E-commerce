@@ -228,17 +228,35 @@
 
     /*<<<<<<<<<<<<<<<<<' API WHATSAPP'>>>>>>>>>>>>>>>>>*/
 
-    .whatsapp {
+    .container-apis{
+        width: 65px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: right;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, .2);
+        border: 1px solid #232f3e;
         position: fixed;
-        bottom: 5%;
-        left: 96%;
+        bottom: 30px;
+        left: 95%;
     }
-
-    .whatsapp a:hover {
-        font-size: 46px;
+    .whatsapp:hover {
+        transform: scale(1.25);
+        transition: .4s ease all;
     }
 
     .whatsapp a {
         color: #075e54;
+        font-size: 40px;
+    }
+
+    .fmessenger:hover {
+        transform: scale(1.25);
+        transition: .4s ease all;
+    }
+
+    .fmessenger a {
+        color: #0084ff;
         font-size: 40px;
     }

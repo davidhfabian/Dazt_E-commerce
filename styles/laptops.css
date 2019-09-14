@@ -1,0 +1,96 @@
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1150px;
+}
+
+.container-sections-bis{
+    margin-top: 30px;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+                          "laptops-title ",
+                          "laptops1   ",
+                          "laptops2   ",
+                          "laptops3   ";
+}
+div.laptops-title{
+    grid-area: laptops-title;
+    height: 40px;
+    background: transparent;
+    color: #666;
+    font-weight: 500;
+}
+section.laptops1{
+    grid-area: laptops1;
+    height: 100%;
+    min-height: 320px;
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-flow: wrap;
+
+}
+section.laptops2{
+    grid-area: laptops2;
+    height: 100%;
+    min-height: 320px;
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-flow: wrap;
+
+}
+section.laptops3{
+    grid-area: laptops3;
+    height: 100%;
+    min-height: 320px;
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-flow: wrap;
+
+}
+
+ /*<<<<<<<<<<<<<<<<  IMG FIX >>>>>>>>>>>>>>>>>*/
+
+ section.img-fix {
+    width: 100%;
+    height: 250px;
+    max-height: 300px;
+    margin-top: 40px;
+    background-image: url('../recursos/img-fixed.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+    position: relative;
+}
+
+div.fix-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    font-weight: bold;
+    font-size: 38px;
+    background-color: rgba(32, 12, 12, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+div.fix-text h3 {
+    height: 100%;
+    display: inline-block;
+    padding-top: 15px;
+    padding-left: 30px;
+    text-align: center;
+}

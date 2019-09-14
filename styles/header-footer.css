@@ -242,6 +242,7 @@ nav.menu div.links a:hover {
 
 nav.menu div.container-grid {
     position: relative;
+    z-index: 11000;
 }
 
 nav.menu div.container-grid div.grid {
@@ -250,7 +251,7 @@ nav.menu div.container-grid div.grid {
     /* background-color: #ccc; */
     position: absolute;
     top: 5px;
-    z-index: 1000;
+    z-index: 9000;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas: "categorias subcategorias subcategorias subcategorias"
@@ -268,6 +269,7 @@ nav.menu div.container-grid div.grid::before {
     border-right: 5px solid transparent;
     border-bottom: 5px solid #fff;
     position: absolute;
+    z-index: 10000;
     top: -5px;
     left: 65px;
 }
@@ -424,12 +426,12 @@ div.footer-container {
     color: rgba(255, 255, 255, 0.4);
 }
 
-.footer-newleter {
+.footer-newsletter {
     width: 100%;
     grid-area: footer-newleter;
 }
 
-.footer-newleter input {
+.footer-newsletter input {
     color: white;
     background: transparent;
     border: none;
@@ -438,23 +440,23 @@ div.footer-container {
     font-weight: bold;
     cursor: pointer;
     border-bottom: 1px solid transparent;
-    border-bottom: 1px solid rgba(0, 0, 0, .4);
+    /* border-bottom: 1px solid rgba(0, 0, 0, .4); */
 }
 
-.footer-newleter input:focus {
+.footer-newsletter input:focus {
     border-bottom: 1px solid #fff;
     padding: 10px 20px 3px 10px;
     transition: 1s ease all;
 }
 
-.footer-newleter input::placeholder {
-    color: #fff;
+.footer-newsletter input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
     font-size: 14px;
     font-weight: bold;
     text-align: center;
 }
 
-.footer-newleter label {
+.footer-newsletter label {
     width: 100%;
     padding: 10px 10px;
 }
