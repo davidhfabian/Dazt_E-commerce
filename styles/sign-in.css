@@ -1,12 +1,193 @@
-section.container-form {
-    text-align: center;
-    width: 200px;
-    margin: 0 auto;
-    margin-top: 30px;
+body {
+    background-image: url("../recursos/patron9.jpg");
+    background-color: #232f3e;
+    background-blend-mode: multiply;
+    background-size: 350px;
 }
-section #form-login{
-    background: #fff;
-    margin-top: 40px;
-    text-align: center;
 
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: #e47911;
+}
+
+div.logo {
+    width: 120px;
+    margin: 0 auto;
+}
+
+div.logo img {
+    border-radius: 8px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, .8);
+    width: 100%;
+}
+
+.titulo {
+    color: #eee;
+    margin: 20px 0;
+    text-shadow: 0px 0px 14px rgba(0, 0, 0, .8);
+    text-align: center;
+}
+
+section.container-form {
+    width: 350px;
+    height: auto;
+    max-height: 99%;
+    font-size: 14px;
+    color: #232f3e;
+    /* border: .5px solid rgba(255, 255, 255, 0.4); */
+}
+
+section #form-sign-in {
+    padding: 25px 20px;
+    border-radius: 15px;
+    background: #eaeded;
+    box-shadow: 0px -2px 30px 0px rgba(0, 0, 0, .8);
+}
+
+#form-sign-in .input-sign {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    margin: 10px 0;
+    border: none;
+    background: #232f3e;
+    color: #eaeded;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    font-size: 16px;
+}
+
+#form-sign-in .input-sign:hover {
+    border: 1px solid #e47911;
+}
+
+#form-sign-in .input-sign:focus {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+#form-sign-in .input-sign::placeholder {
+    transition: .5s ease all;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+#form-sign-in .container-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+#form-sign-in .label-email {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#form-sign-in .label-password {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+}
+
+#form-sign-in .olvidado {
+    text-align: right;
+    font-size: 13px;
+    display: block;
+}
+
+div.email {
+    padding: 5px 0;
+    position: relative;
+}
+#icon-email{
+    position: absolute;
+    left: 10px;
+    bottom: 23px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+div.password {
+    padding: 5px 0;
+    position: relative;
+}
+#icon-pass{
+    position: absolute;
+    left: 10px;
+    bottom: 23px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+div.recuerdame {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 13px;
+}
+
+div.container-btn-sign-in {
+    text-align: center;
+}
+
+#btn-sign-in {
+    width: 50%;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    background: #e47911;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    color: #eaeded;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btn-sign-in:hover {
+    border: 1px solid rgba(0, 0, 0, .4);
+    background: #232f3e;
+    transition: .5s ease all;
+}
+
+.advertencia {
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+div.sign-up {
+    background: #eaeded;
+    color: #232f3e;
+    padding: 20px 20px;
+    margin: 5px 0;
+    border-radius: 15px;
+    font-size: 14px;
+    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, .8);
+    text-align: center;
+}
+
+#btn-sign-up {
+    width: 50%;
+    padding: 10px 20px;
+    margin-top: 8px;
+    font-weight: bold;
+    background: #232f3e;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #eaeded;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btn-sign-up:hover {
+    border: 1px solid transparent;
+    background: #e47911;
+    transition: .5s ease all;
+}
+
+
+.copy{
+    position: fixed;
+    bottom: 0px;
 }

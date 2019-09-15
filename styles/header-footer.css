@@ -24,6 +24,8 @@ input:focus {
 
 nav.menu-sup {
     height: 40px;
+    max-height: 40px;
+    min-height: 40px;
     background: #232f3e;
 }
 
@@ -74,6 +76,15 @@ nav.menu-sup div.container div.container-search input::placeholder {
 }
 
 /*<<<<<<<<<<<<<<<<<'LOGO'>>>>>>>>>>>>>>>>>*/
+nav.menu-sup div.container div.container-logo{
+    max-height: 40px;
+    min-height: 40px;
+    height: 30px;
+}
+nav.menu-sup div.container div.container-logo a img{
+    height: 100%;
+}
+
 
 /*<<<<<<<<<<<<<<<<<'LOGIN - CART'>>>>>>>>>>>>>>>>>*/
 
@@ -84,7 +95,7 @@ nav.menu-sup div.container div.container-singin-cart {
     justify-content: space-between;
 }
 
-nav.menu-sup div.container div.container-singin-cart {
+nav.menu-sup div.container div.container-singin-cart a {
     font-size: 14px;
     font-weight: bold;
     color: #eaeded;
@@ -488,6 +499,7 @@ div.copy {
     color: #666;
     padding: 5px;
     text-align: center;
+    font-size: 14px;
 }
 
 div.copy a {
