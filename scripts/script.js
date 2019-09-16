@@ -2,7 +2,7 @@
 
 
 // ------------------SLIDER----------------------------
-arraySlider = Array ('../recursos/slider1.jpg','../recursos/slider2.jpg','../recursos/slider3.jpg');
+arraySlider = Array ('recursos/slider1.jpg','recursos/slider2.jpg','recursos/slider3.jpg');
 var i = 0;
 function slider(){
     document.slider.src = arraySlider[i];

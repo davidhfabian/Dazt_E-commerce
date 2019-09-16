@@ -229,14 +229,14 @@
     /*<<<<<<<<<<<<<<<<<' API WHATSAPP'>>>>>>>>>>>>>>>>>*/
 
     .container-apis{
-        width: 65px;
+        width: 50px;
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: right;
         border-radius: 10px;
-        background: rgba(0, 0, 0, .2);
-        border: 1px solid #232f3e;
+        background: rgba(0, 0, 0, .1);
+        /* border: 1px solid #232f3e; */
         position: fixed;
         bottom: 30px;
         left: 95%;
