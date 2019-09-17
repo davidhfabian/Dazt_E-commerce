@@ -1,0 +1,92 @@
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1150px;
+}
+
+body {
+    background-image: url("../recursos/patron1.jpg");
+    background-color: #232f3e;
+    background-blend-mode: multiply;
+    background-size: 350px;
+}
+
+section.contain-coment{
+    background: #eaeded;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, .8);
+    text-align: center;
+    width: 60%;
+    margin: 30px auto;
+    border-radius: 10px;
+    color: #232f3e;
+
+}
+
+#form-contact {
+    padding: 20px;
+}
+
+#form-contact .input-contact:hover {
+    border: 1px solid #e47911;
+}
+
+#form-contact .input-contact:focus {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+#form-contact .input-contact::placeholder {
+    transition: .5s ease all;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.input-contact {
+    width: 90%;
+    padding: 10px 10px 10px 40px;
+    margin: 10px 0;
+    border: none;
+    background: #232f3e;
+    color: #eaeded;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    font-size: 16px;
+}
+div.name {
+    padding: 5px 0;
+    position: relative;
+}
+#icon-name{
+    position: absolute;
+    left: 42px;
+    bottom: 23px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+div.email {
+    padding: 5px 0;
+    position: relative;
+}
+#icon-email{
+    position: absolute;
+    left: 42px;
+    bottom: 23px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+div.coment {
+    padding: 5px 0;
+    
+    position: relative;
+}
+#icon-coment{
+    position: absolute;
+    left: 42px;
+    bottom: 200px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+div.mapa{
+    height: 300px;
+    width: 100%;
+    margin: 20px 0;
+}

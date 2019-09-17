@@ -6,7 +6,7 @@ body {
 }
 
 main {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -36,9 +36,10 @@ div.logo img {
 }
 
 section.container-form {
+    margin-top: 30px;
     width: 350px;
     height: auto;
-    max-height: 99%;
+    /* max-height: 99%; */
     font-size: 14px;
     color: #232f3e;
     /* border: .5px solid rgba(255, 255, 255, 0.4); */
@@ -139,14 +140,14 @@ div.container-btn-sign-in {
     font-weight: bold;
     background: #e47911;
     border-radius: 10px;
-    border: 1px solid transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
     color: #eaeded;
     cursor: pointer;
     font-size: 16px;
 }
 
 #btn-sign-in:hover {
-    border: 1px solid rgba(0, 0, 0, .4);
+    border: 1px solid transparent;
     background: #232f3e;
     transition: .5s ease all;
 }
@@ -185,9 +186,27 @@ div.sign-up {
     background: #e47911;
     transition: .5s ease all;
 }
+footer{
+    margin-top: 30px;
+}
+div.footer-sign-in ul{
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
 
+}
+div.footer-sign-in ul li a{
+    font-size: 13px;
+    display: block;
+    padding: 0 10px;
+    color: rgba(255, 255, 255, 0.6);
+}
 
-.copy{
-    position: fixed;
-    bottom: 0px;
+@media (max-width: 600px){
+    div.footer-sign-in ul{
+        display: none;
+    
+    }  
 }

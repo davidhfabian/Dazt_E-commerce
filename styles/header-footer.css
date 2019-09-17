@@ -96,6 +96,8 @@ nav.menu-sup div.container div.container-singin-cart {
 }
 
 nav.menu-sup div.container div.container-singin-cart a {
+    width: auto;
+    height: inherit;
     font-size: 14px;
     font-weight: bold;
     color: #eaeded;
