@@ -7,6 +7,9 @@
     nav.menu-sup {
         padding: 0 10px;
     }
+    .fix-text h3{
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -16,17 +19,13 @@
     .oculta {
         display: none;
     }
-    nav.menu-sup {
-        height: 0px;
-    }
+    
     .container-sections {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(8, auto);
         grid-template-areas: "oferta-title  masvendido-title" "oferta          masvendido" "smartphone-title       smartphone-title" "smartphone        smartphone" "reloj-title       reloj-title" "reloj                 reloj" "box-1          box-1      " " box-2          box-2 ";
     }
-    div.container-search button {
-        margin-left: 70px;
-    }
+    
     /*<<<<<<<<<<<<<<<<<'NAV'>>>>>>>>>>>>>>>>>*/
     nav.menu div.container-button-menu {
         display: flex;
@@ -134,6 +133,19 @@
         width: 150px;
     }
     nav.menu-sup div.container div.container-singin-cart #singin-icon, #favorite-icon, #cart-icon {
+        font-size: 20px;
+    }
+     /*<<<<<<<<<<<<<<<<<'FOOTER>>>>>>>>>>>>>>>>>*/
+     div.footer-container {
+       
+        grid-template-columns: (2, 1fr);
+        grid-template-rows: (2, 1fr);
+       
+        grid-template-areas: "footer-newleter footer-newleter"
+                                "footer-menu footer-social";
+       
+    }
+    .fix-text h3{
         font-size: 20px;
     }
 }
