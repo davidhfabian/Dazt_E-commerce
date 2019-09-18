@@ -95,6 +95,7 @@
         align-items: center;
         margin-bottom: 40px;
         flex-flow: wrap;
+        overflow: auto;
     }
 
     div.reloj-title {
@@ -117,11 +118,13 @@
         flex-flow: wrap;
     }
 
+    /*<<<<<<<<<<<<<<<<<' GRID SECTIONS'>>>>>>>>>>>>>>>>>*/
+
     section.box-1 {
         grid-area: box-1;
         display: flex;
-        height: 100%;
-        min-height: 250px;
+        /* height: 100%; */
+        /* min-height: 250px; */
         background-color: #fff;
         margin-bottom: 40px;
         flex-flow: wrap;
@@ -134,8 +137,8 @@
     section.box-2 {
         grid-area: box-2;
         display: flex;
-        height: 100%;
-        min-height: 250px;
+        /* height: 100%; */
+        /* min-height: 250px; */
         background-color: #fff;
         margin-bottom: 40px;
         flex-flow: wrap;

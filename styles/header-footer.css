@@ -414,6 +414,7 @@ nav.menu div.grid div.subcategorias div.galeria-subcategoria a {
 
 footer {
     background-color: #232f3e;
+    height: auto;
 }
 
 div.footer-container {

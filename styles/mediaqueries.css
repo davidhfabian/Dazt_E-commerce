@@ -135,6 +135,18 @@
     nav.menu-sup div.container div.container-singin-cart #singin-icon, #favorite-icon, #cart-icon {
         font-size: 20px;
     }
+
+
+     /*<<<<<<<<<<<<<<<<<'SLIDER>>>>>>>>>>>>>>>>>*/
+     section.slider img {
+        
+        object-fit: cover;
+        
+    }
+    section.slider {
+        height: auto;
+        max-height: 300px;
+    }
      /*<<<<<<<<<<<<<<<<<'FOOTER>>>>>>>>>>>>>>>>>*/
      div.footer-container {
        
@@ -147,5 +159,29 @@
     }
     .fix-text h3{
         font-size: 20px;
+    }
+}
+@media screen and (max-width: 560px) {
+    
+    .container-sections {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, auto);
+        grid-template-areas: "oferta-title"  
+                                "oferta"   
+                                "masvendido-title"
+                                       "masvendido" 
+                            "smartphone-title"   
+                            "smartphone"    
+                            "reloj-title" 
+                            "reloj"               
+                            "box-1"          
+                            " box-2"
+    }
+    .oculta2{
+        display: none;
+    }
+    section.box-1, section.box-2  {
+        flex-direction: column-reverse;
+        align-items: center;
     }
 }
