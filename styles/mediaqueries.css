@@ -147,6 +147,10 @@
         height: auto;
         max-height: 300px;
     }
+    .container-apis{
+        
+        right: 20px;
+    }
      /*<<<<<<<<<<<<<<<<<'FOOTER>>>>>>>>>>>>>>>>>*/
      div.footer-container {
        

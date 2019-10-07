@@ -242,7 +242,7 @@
         /* border: 1px solid #232f3e; */
         position: fixed;
         bottom: 30px;
-        left: 95%;
+        right: 30px;
     }
     .whatsapp:hover {
         transform: scale(1.25);
