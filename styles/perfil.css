@@ -1,0 +1,161 @@
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1150px;
+}
+
+body {
+    background: #fff;
+}
+
+/*<<<<<<<<<<<<<<<<<'MAIN'>>>>>>>>>>>>>>>>>*/
+
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "menu banner banner banner banner" "menu favorite-title favorite-title  favorite-title favorite-title" "menu favorite favorite favorite favorite";
+    /* grid-gap: 10px; */
+}
+
+/*<<<<<<<<<<<<<<<<<'MENU'>>>>>>>>>>>>>>>>>*/
+
+aside.menu {
+    grid-area: menu;
+    background-color: #eaeded;
+}
+
+aside.menu div.container-avatar {
+    text-align: center;
+    padding: 30px 0;
+    margin: 4px 0;
+}
+
+aside.menu div.container-avatar #avatar {
+    font-size: 100px;
+    min-width: 220px;
+    margin: 10px 0;
+}
+
+aside.menu ul li a {
+    display: block;
+    padding: 20px 10px;
+    border-left: 7px solid transparent;
+    color: #666;
+}
+
+aside.menu ul li a i.far {
+    font-size: 30px
+}
+
+aside.menu ul li a:hover {
+    background: #fff;
+    border-left: 7px solid #e47911;
+    transition: .5 all ease;
+    color: black;
+}
+
+hr {
+    background: rgba(0, 0, 0, .1);
+    height: 2px;
+    border: none;
+}
+
+/*<<<<<<<<<<<<<<<<<'BANNER'>>>>>>>>>>>>>>>>>*/
+
+figure {
+    grid-area: banner;
+}
+
+figure img {
+    object-fit: unset;
+    width: 100%;
+    min-height: 220px;
+}
+
+/*<<<<<<<<<<<<<<<<<'FAVORITES'>>>>>>>>>>>>>>>>>*/
+
+div.favorite-title {
+    grid-area: favorite-title;
+    height: 40px;
+    background: transparent;
+    color: #666;
+    font-weight: 500;
+}
+
+section.favorite {
+    grid-area: favorite;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    min-height: 320px;
+    background: transparent;
+    margin-bottom: 40px;
+    flex-flow: wrap;
+    overflow: auto;
+}
+
+/*<<<<<<<<<<<<<<<<<'MEDIA QUERY'>>>>>>>>>>>>>>>>>*/
+
+@media screen and (max-width: 800px) {
+    main {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "menu menu" "banner banner" "favorite-title favorite-title" "favorite favorite";
+        /* grid-gap: 10px; */
+    }
+    aside.menu {
+        display: flex;
+    }
+    aside.menu div.container-avatar {
+        width: 40%;
+        margin: 0;
+    }
+    aside.menu ul {
+        display: flex;
+        flex-flow: wrap;
+        width: 100%;
+    }
+    aside.menu ul li {
+        width: 50%;
+    }
+    aside.menu ul li a {
+        border-left: 0px solid transparent;
+        border-bottom: 7px solid transparent;
+    }
+    aside.menu ul li a:hover {
+        border-left: 0px solid transparent;
+        border-bottom: 7px solid #e47911;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    aside.menu {
+        display: block;
+    }
+    aside.menu div.container-avatar {
+        width: 100%;
+        margin: 0;
+    }
+    aside.menu ul {
+        display: block;
+    }
+    aside.menu ul li {
+        width: 100%;
+    }
+    aside.menu ul li a {
+        border-left: 7px solid transparent;
+        border-bottom: 0px solid transparent;
+    }
+    aside.menu ul li a:hover {
+        border-left: 7px solid #e47911;
+        border-bottom: 0px solid #e47911;
+    }
+    figure img {
+        object-fit: cover;
+    }
+}

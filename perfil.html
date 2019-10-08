@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dazt</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="icon" type="image/gif" href="favicon/animated_favicon1.gif">
+    <link rel="stylesheet" href="styles/header-footer.css">
+    <link rel="stylesheet" href="styles/perfil.css">
+    <link rel="stylesheet" href="styles/item.css">
+    <link rel="stylesheet" href="styles/mediaqueries.css">
+
+</head>
+
+<body>
+
+    <header>
+
+
+        <!---------------NAV LOGO, SEARCH Y LOGIN---------------->
+
+
+        <nav class="menu-sup " id="menu-sup">
+
+            <div class="container container-nav-menu.sup">
+
+                <div class="container-search">
+
+                    <form action="#" autocomplete="off">
+                        <button type="submit"><i id="search-icon" class="fas fa-search"></i></button>
+                        <input type="text" name="search" id="search" placeholder="Buscar">
+                    </form>
+
+                </div>
+
+                <div class="container-logo">
+                    <a href="home.html">
+                        <img src="img/logo.png" alt="logo">
+                        </<a>
+                </div>
+
+                <div class="container-singin-cart">
+
+                    <div class="singin">
+                        <a href="sign-in.html">
+                            <i id="singin-icon" class="fas fa-sign-in-alt"></i>
+                            <span class="title-icon">Ingresa</span>
+                        </a>
+                    </div>
+
+                    <div class="favorite">
+                        <a href="#">
+                            <i id="favorite-icon" class="fas fa-heart"></i>
+                            <span class="title-icon">Favorito</span>
+                        </a>
+                    </div>
+
+                    <div class="cart">
+                        <a href="cart.html">
+                            <i id="cart-icon" class="fas fa-shopping-cart"></i>
+                            <span class="title-icon">Carrito</span>
+                        </a>
+
+                        <div class="cont-cart">
+                            <span id="cant-cart">1</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+
+        <!---------------NAV MENU---------------->
+
+
+
+        <nav class="menu" id="menu">
+
+            <div class="container container-button-menu">
+                <button id="btn-menu-bar" class="btn-menu-bar"><i class="fas fa-bars"></i></button>
+                <button id="btn-menu-exit" class="btn-menu-exit"><i class="fas fa-times"></i></button>
+            </div>
+
+            <div class="container container-links-nav">
+                <div class="btn-categorias" id="btn-categorias">
+                    <p>Todas las <span>Categorias</span></p>
+                    <i id="btn-arrow" class="fas fa-caret-down"></i>
+                </div>
+
+                <div class="links">
+                    <a href="#">Ofertas</a>
+                    <a href="#">Lo mas buscado</a>
+                    <a href="#">Recomendado</a>
+                    <a href="#">Vender</a>
+                    <a href="#">Ayuda</a>
+                </div>
+
+            </div>
+
+            <div class="container container-grid">
+                <div class="grid " id="grid">
+                    <div class="container-categorias">
+
+                        <button class="btn-back"><i id="btn-back" class="fas fa-arrow-left"></i> Atras</button>
+                        <h3 class="subtitulo">Categorias</h3>
+                        <a href="#" data-categoria="tecnologia">Tecnologia <i
+                                class="fas fa-angle-right btn-arrow-left"></i></a>
+                        <a href="#" data-categoria="libros">Libros <i class="fas fa-angle-right btn-arrow-left"></i></a>
+                        <a href="#" data-categoria="ropa">Ropa <i class="fas fa-angle-right btn-arrow-left"></i></a>
+                        <a href="#" data-categoria="hogar">Hogar <i class="fas fa-angle-right btn-arrow-left"></i></a>
+                        <a href="#" data-categoria="juegos">Juegos <i class="fas fa-angle-right btn-arrow-left"></i></a>
+                        <a href="#" data-categoria="salud">Salud <i class="fas fa-angle-right btn-arrow-left"></i></a>
+                        <a href="#" data-categoria="alimentos">Alimentos <i
+                                class="fas fa-angle-right btn-arrow-left"></i></a>
+
+                    </div>
+
+                    <div class="container-subcategorias ">
+                        <div class="subcategorias active" data-subcategoria="tecnologia">
+
+                            <div class="link-subcategoria">
+
+                                <button class="btn-back"><i id="btn-back" class="fas fa-arrow-left"></i> Atras</button>
+                                <h3 class="subtitulo">Tecnologia</h3>
+                                <a href="laptops.html">Laptop</a>
+                                <a href="#">Tablets</a>
+                                <a href="#">Celulares</a>
+                                <a href="#">Computadoras de escritorio</a>
+                                <a href="#">Monitores</a>
+                                <a href="#">Componentes</a>
+
+                            </div>
+
+                            <div class="banner-subcategoria ">
+
+                                <a href="">
+                                    <img src="img/nav/banner/tecnologia" alt="">
+                                </a>
+
+                            </div>
+
+                            <div class="galeria-subcategoria">
+
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-1.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-2.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-3.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-4.jpg" alt="">
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="subcategorias" data-subcategoria="libros">
+
+                            <div class="link-subcategoria">
+
+                                <button class="btn-back"><i id="btn-back" class="fas fa-arrow-left"></i> Atras</button>
+                                <h3 class="subtitulo">Libros</h3>
+                                <a href="#">Negosios e Inversiòn</a>
+                                <a href="#">Literatura y Ficciòn</a>
+                                <a href="#">Biografias y Memorias</a>
+                                <a href="#">Romance</a>
+                                <a href="#">Arte y Fotografia</a>
+                                <a href="#">Libros para Niños</a>
+
+                            </div>
+                            <div class="banner-subcategoria ">
+
+                                <a href="">
+                                    <img src="img/nav/banner/tecnologia" alt="">
+                                </a>
+
+                            </div>
+                            <div class="galeria-subcategoria">
+
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-4.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-3.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-2.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-1.jpg" alt="">
+                                </a>
+
+                            </div>
+
+                        </div>
+                        <div class="subcategorias" data-subcategoria="ropa">
+
+                            <div class="link-subcategoria">
+
+                                <button class="btn-back"><i id="btn-back" class="fas fa-arrow-left"></i> Atras</button>
+                                <h3 class="subtitulo">Ropa</h3>
+                                <a href="#">Negosios e Inversiòn</a>
+                                <a href="#">Literatura y Ficciòn</a>
+                                <a href="#">Biografias y Memorias</a>
+                                <a href="#">Romance</a>
+                                <a href="#">Arte y Fotografia</a>
+                                <a href="#">Libros para Niños</a>
+
+                            </div>
+
+                            <div class="banner-subcategoria ">
+
+                                <a href="">
+                                    <img src="img/nav/banner/tecnologia" alt="">
+                                </a>
+
+                            </div>
+
+                            <div class="galeria-subcategoria">
+
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-1.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-2.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-3.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-4.jpg" alt="">
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="subcategorias" data-subcategoria="hogar">
+
+                            <div class="link-subcategoria">
+
+                                <button class="btn-back"><i id="btn-back" class="fas fa-arrow-left"></i> Atras</button>
+                                <h3 class="subtitulo">Hogar</h3>
+                                <a href="#">Laptop</a>
+                                <a href="#">Tablets</a>
+                                <a href="#">Celulares</a>
+                                <a href="#">Computadoras de escritorio</a>
+                                <a href="#">Monitores</a>
+                                <a href="#">Componentes</a>
+
+                            </div>
+
+                            <div class="banner-subcategoria ">
+                                <a href="">
+                                    <img src="img/nav/banner/tecnologia" alt="">
+                                </a>
+                            </div>
+
+                            <div class="galeria-subcategoria">
+
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-1.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-2.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-3.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-4.jpg" alt="">
+                                </a>
+
+                            </div>
+
+                        </div>
+                        <div class="subcategorias" data-subcategoria="juegos">
+
+                            <div class="link-subcategoria">
+
+                                <button class="btn-back"><i id="btn-back" class="fas fa-arrow-left"></i> Atras</button>
+                                <h3 class="subtitulo">Juegos</h3>
+                                <a href="#">Laptop</a>
+                                <a href="#">Tablets</a>
+                                <a href="#">Celulares</a>
+                                <a href="#">Computadoras de escritorio</a>
+                                <a href="#">Monitores</a>
+                                <a href="#">Componentes</a>
+
+                            </div>
+
+                            <div class="banner-subcategoria ">
+
+                                <a href="">
+                                    <img src="img/nav/banner/tecnologia" alt="">
+                                </a>
+
+                            </div>
+
+                            <div class="galeria-subcategoria">
+
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-1.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-2.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-3.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-4.jpg" alt="">
+                                </a>
+
+                            </div>
+
+                        </div>
+                        <div class="subcategorias" data-subcategoria="salud">
+
+                            <div class="link-subcategoria">
+
+                                <button class="btn-back"><i id="btn-back" class="fas fa-arrow-left"></i> Atras</button>
+                                <h3 class="subtitulo">Salud</h3>
+                                <a href="#">Laptop</a>
+                                <a href="#">Tablets</a>
+                                <a href="#">Celulares</a>
+                                <a href="#">Computadoras de escritorio</a>
+                                <a href="#">Monitores</a>
+                                <a href="#">Componentes</a>
+
+                            </div>
+
+                            <div class="banner-subcategoria ">
+                                <a href="">
+                                    <img src="img/nav/banner/tecnologia" alt="">
+                                </a>
+                            </div>
+
+                            <div class="galeria-subcategoria">
+
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-1.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-2.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-3.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-4.jpg" alt="">
+                                </a>
+
+                            </div>
+
+                        </div>
+                        <div class="subcategorias" data-subcategoria="alimentos">
+
+                            <div class="link-subcategoria">
+
+                                <button class="btn-back"><i id="btn-back" class="fas fa-arrow-left"></i> Atras</button>
+                                <h3 class="subtitulo">Alimentos</h3>
+                                <a href="#">Laptop</a>
+                                <a href="#">Tablets</a>
+                                <a href="#">Celulares</a>
+                                <a href="#">Computadoras de escritorio</a>
+                                <a href="#">Monitores</a>
+                                <a href="#">Componentes</a>
+
+                            </div>
+
+                            <div class="banner-subcategoria ">
+
+                                <a href="">
+                                    <img src="img/nav/banner/tecnologia" alt="">
+                                </a>
+
+                            </div>
+
+                            <div class="galeria-subcategoria">
+
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-1.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-2.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-3.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/nav/galeria/tecnologia-4.jpg" alt="">
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+    <!---------------MAIN---------------->
+    <main >
+
+        <!---------------MENU---------------->
+        <aside class="menu">
+            <div class="container-avatar">
+                <div class="avatar">
+                        <i id="avatar" class="fas fa-user-circle"></i>
+                </div>
+                <h3>Hola Nameuser!!</h3>
+                <p>correo</p>
+                
+            </div>
+            <hr>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-receipt" style="font-size: 24px; margin: 0px 5px;"></i> Facturacion</a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="#"><i class="fas fa-shopping-bag" style="font-size: 24px; margin: 0px 5px;"></i> Compras</a>
+                    </li>
+                
+                    <li>
+                        <a href="#"><i class="fas fa-gift" style="font-size: 24px; margin: 0px 5px;"></i> Regalos</a>
+                    </li>
+               
+                    <li>
+                        <a href="#"><i class="far fa-credit-card" style="font-size: 24px; margin: 0px 5px;"></i> Medios de pago</a>
+                    </li>
+                
+                    <li><a href="#"><i class="fas fa-cog" style="font-size: 24px; margin: 0px 5px;"></i> Configuracion</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!---------------BANNER---------------->
+
+        <figure class="banner">
+            <img src="recursos/sliderx.webp" alt="">
+        </figure>
+
+        <!---------------FAVORITES--------------->
+
+        <div class="favorite-title">
+            <h2>Favoritos <span>| <a href="#">Ver todo</a></span></h2>
+        </div>
+        <section class="favorite">
+            <article class="item">
+                <a href="product.html">
+
+                    <figure class="item-img">
+                        <img src="img/item/item.jpg" alt="item">
+                    </figure>
+
+                    <div class="item-desc">
+
+                        <span class="price">$299</span>
+                        <span class="price-after">$500</span>
+                        <h5 class="item-title">Apple Macbook Pro 13 Core I5 8gb</h5>
+
+                    </div>
+
+                </a>
+
+                <div class="item-fav">
+                    <i class="far fa-heart"></i>
+                </div>
+
+                <div class="item-cart">
+                    <i class="fas fa-cart-plus"></i>
+                </div>
+
+                <div class="item-button">
+                    Comprar ya!
+                </div>
+
+            </article>
+            <article class="item">
+                <a href="product.html">
+
+                    <figure class="item-img">
+                        <img src="img/item/item.jpg" alt="item">
+                    </figure>
+
+                    <div class="item-desc">
+
+                        <span class="price">$299</span>
+                        <span class="price-after">$500</span>
+                        <h5 class="item-title">Apple Macbook Pro 13 Core I5 8gb</h5>
+
+                    </div>
+
+                </a>
+
+                <div class="item-fav">
+                    <i class="far fa-heart"></i>
+                </div>
+
+                <div class="item-cart">
+                    <i class="fas fa-cart-plus"></i>
+                </div>
+
+                <div class="item-button">
+                    Comprar ya!
+                </div>
+
+            </article>
+
+            <article class="item ">
+                <a href="product.html">
+
+                    <figure class="item-img">
+                        <img src="img/item/item.jpg" alt="item">
+                    </figure>
+
+                    <div class="item-desc">
+
+                        <span class="price">$299</span>
+                        <span class="price-after">$500</span>
+                        <h5 class="item-title">Apple Macbook Pro 13 Core I5 8gb</h5>
+
+                    </div>
+
+                </a>
+
+                <div class="item-fav">
+                    <i class="far fa-heart"></i>
+                </div>
+
+                <div class="item-cart">
+                    <i class="fas fa-cart-plus"></i>
+                </div>
+
+                <div class="item-button">
+                    Comprar ya!
+                </div>
+
+            </article>
+
+            <article class="item ">
+
+                <a href="product.html">
+
+                    <figure class="item-img">
+                        <img src="img/item/item.jpg" alt="item">
+                    </figure>
+
+                    <div class="item-desc">
+
+                        <span class="price">$299</span>
+                        <span class="price-after">$500</span>
+                        <h5 class="item-title">Apple Macbook Pro 13 Core I5 8gb</h5>
+
+                    </div>
+
+                </a>
+                <div class="item-fav">
+                    <i class="far fa-heart"></i>
+                </div>
+
+                <div class="item-cart">
+                    <i class="fas fa-cart-plus"></i>
+                </div>
+
+                <div class="item-button">
+                    Comprar ya!
+                </div>
+            </article>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+
+        <div class="footer-container container">
+
+            <div class="footer-menu">
+
+                <h4 class="footer-title">menu</h4>
+
+                <ul>
+
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="faq.html">F.Q.A</a></li>
+                    <li><a href="#">Empresa</a></li>
+                    <li><a href="#">Devoluciones <br>y reenplazo</a></li>
+                    <li><a href="#"> Politica y<br>Pivacidad </a> </li>
+
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+
+                <label for="newsletter">
+                    <h4 class="footer-title">Newsletter</h4>
+                </label>
+                <input type="text" placeholder="Dejanos tu email">
+
+            </div>
+
+            <div class="footer-social">
+
+                <h4 class="footer-title">Redes Sociales</h4>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+
+            </div>
+
+        </div>
+
+        <div class="copy">
+            <p>Copyright © <strong><a href="#">David fabian</a> </strong>2019</p>
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/js/all.min.js"></script>
+
+    <script src="scripts/script-header.js"></script>
+
+</body>
+
+
+</html>

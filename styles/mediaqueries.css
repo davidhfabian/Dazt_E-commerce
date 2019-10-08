@@ -166,20 +166,22 @@
     }
 }
 @media screen and (max-width: 560px) {
-    
+    div.container {
+        width: 98%;
+    }
     .container-sections {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(10, auto);
         grid-template-areas: "oferta-title"  
-                                "oferta"   
-                                "masvendido-title"
-                                       "masvendido" 
+                            "oferta"   
+                            "masvendido-title"
+                            "masvendido" 
                             "smartphone-title"   
                             "smartphone"    
                             "reloj-title" 
                             "reloj"               
                             "box-1"          
-                            " box-2"
+                            "box-2"
     }
     .oculta2{
         display: none;

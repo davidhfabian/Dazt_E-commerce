@@ -16,7 +16,6 @@ section.product-container {
     justify-content: center;
     align-items: center;
     color: #333;
-
 }
 
 div.product-img-container {
@@ -38,6 +37,7 @@ div.product-desc-container {
 
 div.product-img-container div.product-banner {
     height: 80%;
+    
 }
 
 div.product-img-container div.product-banner img {
@@ -48,6 +48,7 @@ div.product-img-container div.product-banner img {
 
 div.product-img-container div.product-imgs {
     height: 20%;
+    min-height: 70px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,19 +103,21 @@ select#product-color, select#product-cant {
 
 select#product-color option, select#product-cant option {
     font-size: 14px;
-
 }
-span.product-stock{
+
+span.product-stock {
     font-size: 13px;
     color: #ccc;
 }
-div.product-btns{
+
+div.product-btns {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px 0;
 }
-#btn-comprar{
+
+#btn-comprar {
     width: 35%;
     padding: 10px 10px;
     font-weight: bold;
@@ -126,11 +129,13 @@ div.product-btns{
     font-size: 14px;
     margin: 10px 10px;
 }
-#btn-comprar:hover{
+
+#btn-comprar:hover {
     border: 1px solid transparent;
     background: #232f3e;
     transition: .5s ease all;
 }
+
 #btn-añadir-carrito {
     width: 35%;
     padding: 10px 10px;
@@ -148,4 +153,29 @@ div.product-btns{
     border: 1px solid transparent;
     background: #e47911;
     transition: .5s ease all;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+        max-width: 530px;
+        min-width: 300px;
+    }
+    section.product-container {
+        display: block;
+        height: initial;
+        max-height: initial;
+    }
+    div.product-img-container, div.product-desc-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+   
+    div.product-img-container div.product-imgs a {
+        height: 80px;
+        width: 80px;
+    }
+    
 }
