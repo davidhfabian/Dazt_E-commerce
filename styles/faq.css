@@ -52,3 +52,15 @@ section.container-faqs .quest{
 section.container-faqs .reply{
     padding: 10px 40px;
 }
+
+@media screen and (max-width: 800px) {
+    section.container-faqs .quest{
+        padding: 20px 20px;
+       
+    }
+    section.container-faqs .reply{
+        padding: 10px 20px;
+    }
+
+
+}

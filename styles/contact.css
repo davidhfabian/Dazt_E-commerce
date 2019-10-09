@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
 .container {
     margin: 0 auto;
     width: 90%;
@@ -49,7 +56,7 @@ section.contain-coment{
 }
 
 .input-contact {
-    width: 90%;
+    width: 100%;
     padding: 10px 10px 10px 40px;
     margin: 10px 0;
     border: none;
@@ -65,7 +72,7 @@ div.name {
 }
 #icon-name{
     position: absolute;
-    left: 32px;
+    left: 10px;
     bottom: 23px;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.8);
@@ -76,7 +83,7 @@ div.email {
 }
 #icon-email{
     position: absolute;
-    left: 32px;
+    left: 10px;
     bottom: 23px;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.8);
@@ -88,7 +95,7 @@ div.coment {
 }
 #icon-coment{
     position: absolute;
-    left: 32px;
+    left: 10px;
     bottom: 200px;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.8);

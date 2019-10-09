@@ -303,6 +303,12 @@
         height: auto;
         max-height: 300px;
     }
+    section.box-2 {
+        margin-bottom: 10px;
+    }
+    section.box-1 {
+        margin-bottom: 10px;
+    }
     .container-apis{
         
         right: 20px;

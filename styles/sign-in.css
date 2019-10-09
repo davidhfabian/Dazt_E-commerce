@@ -1,3 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 body {
     background-image: url("../recursos/patron1.jpg");
     background-color: #232f3e;
@@ -52,7 +61,7 @@ section #form-sign-in {
     box-shadow: 0px -2px 30px 0px rgba(0, 0, 0, .8);
 }
 
-#form-sign-in .input-sign {
+ .input-sign {
     width: 100%;
     padding: 10px 10px 10px 40px;
     margin: 10px 0;

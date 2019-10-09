@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <?php include_once("partials/meta.php") ?>
     <title>Crear cuenta en Dazt</title>
-    <link rel="stylesheet" href="styles/header-footer.css">
     <link rel="stylesheet" href="styles/sign-up.css">
-    <link rel="stylesheet" href="styles/mediaqueries.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
 
@@ -17,7 +14,7 @@
                     <div class="logo">
                             <img src="img/logo.png" alt="logo">
                         </div>
-                        <h2 class="titulo">Crear cuenta en <a href="home.html">Dazt</a></h2>
+                        <h2 class="titulo">Crear cuenta en <a href="home.php">Dazt</a></h2>
                     <form action="" id="form-sign-up">
                         <div class="name">
                             <label class="label-sign-up" for="name">Nombre </label>
@@ -55,7 +52,7 @@
                     </form>
                     <div class="sign-in">
                             <p>¿ya tienes una cuenta en Dazt?</p>
-                            <button id="btn-sign-in" onclick="window.location.href='sign-in.html'">Iniciar sesiòn</button>
+                            <button id="btn-sign-in" onclick="window.location.href='sign-in.php'">Iniciar sesiòn</button>
         
                         </div>
                 </section>
