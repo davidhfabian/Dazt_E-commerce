@@ -1,3 +1,27 @@
+<?php 
+require_once('functions/autoload.php');
+
+
+if(isset($_COOKIE['email'])){
+    $_SESSION['email'] =  $_COOKIE['email'];
+
+}
+
+ if (loggedIn()){
+     header('location: profile.php');
+}
+
+
+if ($_POST) {
+    $email = $_POST['email'];
+    $error = validationLogin($_POST);
+    if (empty($error)) {
+
+        $error['login'] = logged($_POST);
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -16,12 +40,14 @@
                 <img src="img/logo.png" alt="logo">
             </div>
             <h2 class="titulo">Iniciar sesión en <a href="home.php">Dazt</a></h2>
-            <form action="" id="form-sign-in">
+            <form action="sign-in.php" method="POST" id="form-sign-in">
 
+                <P class="error"><?= $error['login'] ?? '' ?></P>
                 <div class="email">
                     <label class="label-email" for="email">Nombre de usuario o dirección de correo electrónico
                     </label> <br>
-                    <input class="input-sign" type="email" name="email" id="email" placeholder="Email" autocomplete="off" required>
+                    <p class="error"><?= $error['email'] ?? ' ' ?></p>
+                    <input class="input-sign" type="email" name="email" id="email" placeholder="Email" autocomplete="off" value="<?=$email ?? ''?>">
                     <div id="icon-email">
                         <i class="far fa-envelope"></i>
                     </div>
@@ -31,7 +57,8 @@
                     <div class="container-label">
                         <label class="label-password" for="password">Contraseña</label> <span class="olvidado"><a href="#">¿Olvidó su contraseña?</a></span>
                     </div>
-                    <input class="input-sign" type="password" name="password" id="password" placeholder="Password" required>
+                    <p class="error"><?= $error['password'] ?? ' ' ?></p>
+                    <input class="input-sign" type="password" name="password" id="password" placeholder="Password" >
                     <div id="icon-pass">
                         <i class="fas fa-key"></i>
                     </div>
@@ -39,7 +66,7 @@
 
                 <div class="recuerdame">
                     <input type="checkbox" name="recuerdame" id="recuerdame" checked>
-                    <label for="recuerdame">Recordarme</label>
+                    <label for="recuerdame">Mantener session</label>
                 </div>
 
                 <div class="container-btn-sign-in">

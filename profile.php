@@ -1,3 +1,15 @@
+<?php 
+require_once("functions/autoload.php");
+
+if(isset($_COOKIE['email'])){
+    $_SESSION['email'] =  $_COOKIE['email'];
+    
+}
+ if (!loggedIn()){
+     header('location: sign-in.php');
+ }
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -21,11 +33,13 @@
         <!---------------MENU---------------->
         <aside class="menu">
             <div class="container-avatar">
+                
                 <div class="avatar">
-                        <i id="avatar" class="fas fa-user-circle"></i>
+                        <img src="avatars/<?=$_SESSION['avatar']?>" alt="">
                 </div>
-                <h3>Hola Nameuser!!</h3>
-                <p>correo</p>
+
+                <h3>Hola <?=$_SESSION['name'] ?? 'USUARIO'?>!!</h3>
+                <p><?=$_SESSION['email']?></p>
                 
             </div>
             <hr>

@@ -21,15 +21,15 @@ input:focus {
 /*<<<<<<<<<<<<<<<<<'HEADER'>>>>>>>>>>>>>>>>>*/
 
 /*<<<<<<<<<<<<<<<<<'NAV LOGO, SEARCH, LOGIN'>>>>>>>>>>>>>>>>>*/
-
-nav.menu-sup {
-    height: 40px;
-    max-height: 40px;
-    min-height: 40px;
+header{
     background: #232f3e;
 }
+nav.menu-sup {
+    height: 54px;
+}
 
-nav.menu-sup div.container {
+nav.menu-sup div.container-nav-menu-sup {
+    height: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,8 +38,10 @@ nav.menu-sup div.container {
 /*<<<<<<<<<<<<<<<<<'SEARCH'>>>>>>>>>>>>>>>>>*/
 
 nav.menu-sup div.container div.container-search {
-    width: 295px;
-    padding: 5px 0px;
+    width: 300px;
+    height: inherit;
+    display: flex;
+    align-items: center;
 }
 
 nav.menu-sup div.container div.container-search button {
@@ -49,7 +51,7 @@ nav.menu-sup div.container div.container-search button {
 }
 
 nav.menu-sup div.container div.container-search #search-icon {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 nav.menu-sup div.container div.container-search input {
@@ -77,9 +79,9 @@ nav.menu-sup div.container div.container-search input::placeholder {
 
 /*<<<<<<<<<<<<<<<<<'LOGO'>>>>>>>>>>>>>>>>>*/
 nav.menu-sup div.container div.container-logo{
-    max-height: 40px;
-    min-height: 40px;
-    height: 30px;
+
+    height: inherit;
+    max-height: 38px;
 }
 nav.menu-sup div.container div.container-logo a img{
     height: 100%;
@@ -89,62 +91,109 @@ nav.menu-sup div.container div.container-logo a img{
 /*<<<<<<<<<<<<<<<<<'LOGIN - CART'>>>>>>>>>>>>>>>>>*/
 
 nav.menu-sup div.container div.container-singin-cart {
-    width: 295px;
-    padding: 5px 0px;
+    width: 300px;
+    height: inherit;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-nav.menu-sup div.container div.container-singin-cart a {
-    width: auto;
+nav.menu-sup div.container div.container-singin-cart a  {
     height: inherit;
     font-size: 14px;
     font-weight: bold;
     color: #eaeded;
 }
+nav.menu-sup div.container div.container-singin-cart a .title-icon-avatar{
+    height: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    color: #e47911;
+}
+nav.menu-sup div.container div.container-singin-cart button {
+    background: transparent;
+    border: none;
+    height: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    color: #eaeded;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
 
 nav.menu-sup div.container div.container-singin-cart #singin-icon {
-    font-size: 16px;
+    
+    font-size: 20px;
     margin-right: 5px;
 }
 
 nav.menu-sup div.container div.container-singin-cart #favorite-icon {
-    font-size: 16px;
+    font-size: 20px;
     margin-right: 5px;
 }
 
 nav.menu-sup div.container div.container-singin-cart #cart-icon {
-    font-size: 16px;
+    font-size: 20px;
     margin-right: 5px;
 }
 
 nav.menu-sup div.container div.container-singin-cart div.singin {
-    padding: 7px;
+
     border-radius: 3px;
     border: 1px solid transparent;
     cursor: pointer;
+    padding: 7px;
+}
+nav.menu-sup div.container div.container-singin-cart div.singin a{
+
+    display: flex;
+    align-items: center;
+}
+nav.menu-sup div.container div.container-singin-cart div.singin figure.avatar{
+    height: 28px;
+    width: 28px;
+    display: inline-block;
+    margin-right: 5px;
+}
+nav.menu-sup div.container div.container-singin-cart div.singin figure.avatar img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
 }
 
-nav.menu-sup div.container div.container-singin-cart div.favorite {
-    padding: 7px;
+nav.menu-sup div.container div.container-singin-cart .favorite {
+    
     border-radius: 3px;
     border: 1px solid transparent;
     cursor: pointer;
+    padding: 7px;
+}
+nav.menu-sup div.container div.container-singin-cart .favorite a {
+    
+    display: flex;
+    align-items: center;
 }
 
 nav.menu-sup div.container div.container-singin-cart div.cart {
-    padding: 7px;
+  
     border-radius: 3px;
     border: 1px solid transparent;
     position: relative;
     cursor: pointer;
+    padding: 7px;
+}
+nav.menu-sup div.container div.container-singin-cart div.cart a{
+  
+    display: flex;
+    align-items: center;
 }
 
 nav.menu-sup div.container div.container-singin-cart div.singin:hover {
     border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-nav.menu-sup div.container div.container-singin-cart div.favorite:hover {
+nav.menu-sup div.container div.container-singin-cart .favorite:hover {
     border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
@@ -525,19 +574,37 @@ nav.menu div.grid div.subcategorias div.galeria-subcategoria a {
         height: 100%;
     }
     /*<<<<<<<<<<<<<<<<<'NAV SUPERIOR'>>>>>>>>>>>>>>>>>*/
-    .title-icon, #search {
+    .title-icon, .title-icon-avatar, #search {
         display: none;
     }
     nav.menu-sup div.container div.container-singin-cart {
-        width: 150px;
+        width: 120px;
     }
     nav.menu-sup div.container div.container-search {
-        width: 150px;
+        width: 100px;
     }
     nav.menu-sup div.container div.container-singin-cart #singin-icon, #favorite-icon, #cart-icon {
         font-size: 20px;
     }
-
+    nav.menu-sup div.container div.container-search {
+        width: 20px;
+        margin-left: 50px;
+    }
+   
+    /* nav.menu div.container-button-menu {
+        display: flex;
+        position: absolute;
+        top: 8px;
+    }
+    nav div.container-button-menu button.btn-menu-exit {
+        display: none;
+        position: absolute;
+        top: 0px;
+        right: -50px;
+        width: 130px;
+        padding-left: 80px;
+       
+    } */
 
    
    
@@ -546,5 +613,40 @@ nav.menu div.grid div.subcategorias div.galeria-subcategoria a {
     div.container {
         width: 98%;
     }
-    
+    header{
+        position: relative;
+    }
+    nav.menu-sup div.container div.container-logo{
+        max-height: 30px;
+    }
+    nav.menu-sup div.container div.container-singin-cart div.cart {
+        padding: 0px;
+    }
+    nav.menu-sup div.container div.container-singin-cart .favorite {
+        padding: 0px;
+    }
+    nav.menu-sup div.container div.container-singin-cart .singin {
+        padding: 0px;
+    }
+    nav.menu-sup div.container div.container-singin-cart div.singin {
+        
+        padding: 0px;
+    }
+    nav.menu-sup div.container div.container-search {
+        width: 20px;
+        margin-left: 50px;
+    }
+    /* nav.menu div.container-button-menu {
+        display: flex;
+        position: absolute;
+        top: 8px;
+    }
+    nav div.container-button-menu button.btn-menu-exit {
+        display: none;
+        position: absolute;
+        top: 0px;
+        right: -5px;
+        z-index: 99999999;
+       
+    } */
 }

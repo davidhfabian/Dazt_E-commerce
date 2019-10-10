@@ -1,3 +1,6 @@
+<?php
+require_once("functions/autoload.php");
+?>
 <header>
 
 
@@ -6,7 +9,7 @@
 
     <nav class="menu-sup " id="menu-sup">
 
-        <div class="container container-nav-menu.sup">
+        <div class="container container-nav-menu-sup">
 
             <div class="container-search">
 
@@ -20,24 +23,42 @@
             <div class="container-logo">
                 <a href="home.php">
                     <img src="img/logo.png" alt="logo">
-                    </<a>
+                </a>
             </div>
 
             <div class="container-singin-cart">
 
-                <div class="singin">
-                    <a href="sign-in.php">
-                        <i id="singin-icon" class="fas fa-sign-in-alt"></i>
-                        <span class="title-icon">Ingresa</span>
-                    </a>
-                </div>
+                <?php if (loggedIn()) { ?>
+                    <div class="singin">
+                        <a href="profile.php">
+                            <figure class="avatar">
+                                <img src="<?= 'avatars/' . $_SESSION['avatar'] ?? 'recursos/img-fixed.jpeg' ?>" alt="">
+                            </figure>
+                            <span class="title-icon-avatar"><?= $_SESSION['name'] ?? 'Usuario' ?></span>
+                        </a>
+                    </div>
 
-                <div class="favorite">
-                    <a href="#">
-                        <i id="favorite-icon" class="fas fa-heart"></i>
-                        <span class="title-icon">Favorito</span>
-                    </a>
-                </div>
+                    <form class="favorite" action="logout.php" method="POST">
+                        <button type="submit">
+                            <i id="favorite-icon" class="fas fa-sign-out-alt"></i>
+                            <span class="title-icon">Logout</span>
+                        </button>
+                    </form>
+                <?php } else { ?>
+                    <div class="singin">
+                        <a href="sign-in.php">
+                            <i id="singin-icon" class="fas fa-sign-in-alt"></i>
+                            <span class="title-icon">Ingresa</span>
+                        </a>
+                    </div>
+                    <div class="favorite">
+                        <a href="#">
+                            <i id="favorite-icon" class="fas fa-heart"></i>
+                            <span class="title-icon">Favorito</span>
+                        </a>
+                    </div>
+                <?php } ?>
+
 
                 <div class="cart">
                     <a href="cart.php">
