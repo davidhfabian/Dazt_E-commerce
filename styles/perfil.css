@@ -36,6 +36,9 @@ aside.menu div.container-avatar div.avatar {
     width: 110px;
     height: 110px;
     margin: 0 auto;
+    background-image: url("../recursos/default.png");
+    background-size: cover;
+    border-radius: 50%;
 }
 aside.menu div.container-avatar div.avatar img{
     border: .4px solid #666;
