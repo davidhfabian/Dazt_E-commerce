@@ -49,7 +49,6 @@ if ($_POST) {
         // $nombreArchivo = subirAvatar($_FILES['avatar'], $email);
     }
 }
-var_dump($_FILES);
 ?>
 <!DOCTYPE html>
 <html lang="es">
