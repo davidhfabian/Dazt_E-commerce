@@ -130,7 +130,7 @@ require_once("functions/autoload.php");
 
                             <button class="btn-back"><i id="btn-back" class="fas fa-arrow-left"></i> Atras</button>
                             <h3 class="subtitulo">Tecnologia</h3>
-                            <a href="products.php">Laptop</a>
+                            <a href="listProduct.php">Laptop</a>
                             <a href="#">Tablets</a>
                             <a href="#">Celulares</a>
                             <a href="#">Computadoras de escritorio</a>

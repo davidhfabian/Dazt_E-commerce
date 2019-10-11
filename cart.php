@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<?php 
+require_once("functions/autoload.php");
+
+if(isset($_COOKIE['email'])){
+    $_SESSION['email'] =  $_COOKIE['email'];
+    
+}
+ 
+
+?><!DOCTYPE html>
 <html lang="en">
 
 <head>
